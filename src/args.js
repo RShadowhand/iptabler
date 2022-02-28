@@ -731,7 +731,10 @@ let args = [
   }, {
     names: ['wait', 'w'],
     arg: '--wait'
-  }
+  }, {
+    names: ['line-numbers', 'linenumbers', 'lines'],
+    arg: '--line-numbers'
+  }	
 ];
 
 module.exports = args;
