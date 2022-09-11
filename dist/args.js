@@ -117,6 +117,9 @@ let args = [
     names: ['clusterHashSeed'],
     arg: '--cluster-hash-seed'
   }, {
+    names: ['module'],
+    arg: '-m'
+  }, {
     names: ['comment'],
     arg: '--comment'
   }, {
@@ -174,198 +177,198 @@ let args = [
     names: ['ctrepldstport'],
     arg: '--ctrepldstport'
   }, {
-		names: ['ctstatus'],
-		arg: '--ctstatus'
-	}, {
-		names: ['ctexpire'],
-		arg: '--ctexpire'
-	}, {
-		names: ['ctdir'],
-		arg: '--ctdir'
-	}, {
-		names: ['cpu'],
-		arg: '--cpu'
-	}, {
-		names: ['dccpTypes'],
-		arg: '--dccp-types'
-	}, {
-		names: ['dccpOption'],
-		arg: '--dccp-option'
-	}, {
-		names: ['dscp'],
-		arg: '--dscp'
-	}, {
-		names: ['dscpClass'],
-		arg: '--dscp-class'
-	}, {
-		names: ['ecnTcpCwr'],
-		arg: '--ecn-tcp-cwr'
-	}, {
-		names: ['ecnTcpEce'],
-		arg: '--ecn-tcp-ece'
-	}, {
-		names: ['ecnIpEct'],
-		arg: '--ecn-ip-ect'
-	}, {
-		names: ['espspi'],
-		arg: '--espspi'
-	}, {
-		names: ['hashlimitName', 'hlName'],
-		arg: '--hashlimit-name'
-	}, {
-		names: ['hashlimitUpto', 'hlUpto'],
-		arg: '--hashlimit-upto'
-	}, {
-		names: ['hashlimitAbove', 'hlAbove'],
-		arg: '--hashlimit-above'
-	}, {
-		names: ['hashlimitBurst', 'hlBurst'],
-		arg: '--hashlimit-burst'
-	}, {
-		names: ['hashlimitMode', 'hlMode'],
-		arg: '--hashlimit-mode'
-	}, {
-		names: ['hashlimitSrcmask', 'hlSrcmask', 'hlSmask'],
-		arg: '--hashlimit-srcmask'
-	}, {
-		names: ['hashlimitDstmask', 'hlDstmask', 'hlDmask'],
-		arg: '--hashlimit-dstmask'
-	}, {
-		names: ['hashlimitHtableSize', 'hlHtableSize'],
-		arg: '--hashlimit-htable-size'
-	}, {
-		names: ['hashlimitHtableMax', 'hlHtableMax'],
-		arg: '--hashlimit-htable-max'
-	}, {
-		names: ['hashlimitHtableExpire', 'hlHtableExpire'],
-		arg: '--hashlimit-htable-expire'
-	}, {
-		names: ['hashlimitHtableGcinterval', 'hlHtableGcinterval'],
-		arg: '--hashlimit-htable-gcinterval'
-	}, {
-		names: ['icmpType', 'icmp'],
-		arg: '--icmp-type'
-	}, {
-		names: ['sourceRange', 'srcRange', 'sRange'],
-		arg: '--src-range'
-	}, {
-		names: ['destinationRange', 'destRange', 'dstRange', 'dRange'],
-		arg: '--dst-range'
-	}, {
-		names: ['ipvs'],
-		arg: '--ipvs'
-	}, {
-		names: ['vproto'],
-		arg: '--vproto'
-	}, {
-		names: ['vaddr'],
-		arg: '--vaddr'
-	}, {
-		names: ['vport'],
-		arg: '--vport'
-	}, {
-		names: ['vdir'],
-		arg: '--vdir'
-	}, {
-		names: ['vmethod'],
-		arg: '--vmethod'
-	}, {
-		names: ['vportctl'],
-		arg: '--vportctl'
-	}, {
-		names: ['length', 'len'],
-		arg: '--length'
-	}, {
-		names: ['limit'],
-		arg: '--limit'
-	}, {
-		names: ['limitBurst'],
-		arg: '--limit-burst'
-	}, {
-		names: ['mac'],
-		arg: '--mac'
-	}, {
-		names: ['mark'],
-		arg: '--mark'
-	}, {
-		names: ['sourcePorts', 'srcPorts', 'sports'],
-		arg: '--source-ports'
-	}, {
-		names: ['destinationPorts', 'destPorts', 'dstPorts', 'dports'],
-		arg: '--destination-ports'
-	}, {
-		names: ['ports'],
-		arg: '--ports'
-	}, {
-		names: ['genre'],
-		arg: '--genre'
-	}, {
-		names: ['ttl'],
-		arg: '--ttl'
-	}, {
-		names: ['log'],
-		arg: '--log'
-	}, {
-		names: ['uidOwner'],
-		arg: '--uid-owner'
-	}, {
-		names: ['gidOwner'],
-		arg: '--gid-owner'
-	}, {
-		names: ['socketExists'],
-		arg: '--socket-exists'
-	}, {
-		names: ['physdevIn', 'pdevIn', 'pIn'],
-		arg: '--physdev-in'
-	}, {
-		names: ['physdevOut', 'pdevOut', 'pOut'],
-		arg: '--physdev-out'
-	}, {
-		names: ['physdevIsIn', 'pdevIsIn', 'pIsIn'],
-		arg: '--physdev-is-in'
-	}, {
-		names: ['physdevIsOut', 'pdevIsOut', 'pIsOut'],
-		arg: '--physdev-is-out'
-	}, {
-		names: ['physdevIsBridged', 'pdevIsBridged', 'pIsBridged'],
-		arg: '--physdev-is-bridged'
-	}, {
-		names: ['pktType', 'pType'],
-		arg: '--pkt-type'
-	}, {
-		names: ['dir'],
-		arg: '--dir'
-	}, {
-		names: ['policy', 'pol'],
-		arg: '--pol'
-	}, {
-		names: ['strict'],
-		arg: '--strict'
-	}, {
-		names: ['reqid'],
-		arg: '--reqid'
-	}, {
-		names: ['spi'],
-		arg: '--spi'
-	}, {
-		names: ['proto'],
-		arg: '--proto'
-	}, {
-		names: ['mode'],
-		arg: '--mode'
-	}, {
-		names: ['tunnelSrc', 'tunSrc', 'tSrc'],
-		arg: '--tunnel-src'
-	}, {
-		names: ['tunnelDst', 'tunDst', 'tDst'],
-		arg: '--tunnel-dst'
-	}, {
-		names: ['next'],
-		arg: '--next'
-	}, {
-		names: ['quota'],
-		arg: '--quota'
-	}, {
+                names: ['ctstatus'],
+                arg: '--ctstatus'
+        }, {
+                names: ['ctexpire'],
+                arg: '--ctexpire'
+        }, {
+                names: ['ctdir'],
+                arg: '--ctdir'
+        }, {
+                names: ['cpu'],
+                arg: '--cpu'
+        }, {
+                names: ['dccpTypes'],
+                arg: '--dccp-types'
+        }, {
+                names: ['dccpOption'],
+                arg: '--dccp-option'
+        }, {
+                names: ['dscp'],
+                arg: '--dscp'
+        }, {
+                names: ['dscpClass'],
+                arg: '--dscp-class'
+        }, {
+                names: ['ecnTcpCwr'],
+                arg: '--ecn-tcp-cwr'
+        }, {
+                names: ['ecnTcpEce'],
+                arg: '--ecn-tcp-ece'
+        }, {
+                names: ['ecnIpEct'],
+                arg: '--ecn-ip-ect'
+        }, {
+                names: ['espspi'],
+                arg: '--espspi'
+        }, {
+                names: ['hashlimitName', 'hlName'],
+                arg: '--hashlimit-name'
+        }, {
+                names: ['hashlimitUpto', 'hlUpto'],
+                arg: '--hashlimit-upto'
+        }, {
+                names: ['hashlimitAbove', 'hlAbove'],
+                arg: '--hashlimit-above'
+        }, {
+                names: ['hashlimitBurst', 'hlBurst'],
+                arg: '--hashlimit-burst'
+        }, {
+                names: ['hashlimitMode', 'hlMode'],
+                arg: '--hashlimit-mode'
+        }, {
+                names: ['hashlimitSrcmask', 'hlSrcmask', 'hlSmask'],
+                arg: '--hashlimit-srcmask'
+        }, {
+                names: ['hashlimitDstmask', 'hlDstmask', 'hlDmask'],
+                arg: '--hashlimit-dstmask'
+        }, {
+                names: ['hashlimitHtableSize', 'hlHtableSize'],
+                arg: '--hashlimit-htable-size'
+        }, {
+                names: ['hashlimitHtableMax', 'hlHtableMax'],
+                arg: '--hashlimit-htable-max'
+        }, {
+                names: ['hashlimitHtableExpire', 'hlHtableExpire'],
+                arg: '--hashlimit-htable-expire'
+        }, {
+                names: ['hashlimitHtableGcinterval', 'hlHtableGcinterval'],
+                arg: '--hashlimit-htable-gcinterval'
+        }, {
+                names: ['icmpType', 'icmp'],
+                arg: '--icmp-type'
+        }, {
+                names: ['sourceRange', 'srcRange', 'sRange'],
+                arg: '--src-range'
+        }, {
+                names: ['destinationRange', 'destRange', 'dstRange', 'dRange'],
+                arg: '--dst-range'
+        }, {
+                names: ['ipvs'],
+                arg: '--ipvs'
+        }, {
+                names: ['vproto'],
+                arg: '--vproto'
+        }, {
+                names: ['vaddr'],
+                arg: '--vaddr'
+        }, {
+                names: ['vport'],
+                arg: '--vport'
+        }, {
+                names: ['vdir'],
+                arg: '--vdir'
+        }, {
+                names: ['vmethod'],
+                arg: '--vmethod'
+        }, {
+                names: ['vportctl'],
+                arg: '--vportctl'
+        }, {
+                names: ['length', 'len'],
+                arg: '--length'
+        }, {
+                names: ['limit'],
+                arg: '--limit'
+        }, {
+                names: ['limitBurst'],
+                arg: '--limit-burst'
+        }, {
+                names: ['mac'],
+                arg: '--mac'
+        }, {
+                names: ['mark'],
+                arg: '--mark'
+        }, {
+                names: ['sourcePorts', 'srcPorts', 'sports'],
+                arg: '--source-ports'
+        }, {
+                names: ['destinationPorts', 'destPorts', 'dstPorts', 'dports'],
+                arg: '--destination-ports'
+        }, {
+                names: ['ports'],
+                arg: '--ports'
+        }, {
+                names: ['genre'],
+                arg: '--genre'
+        }, {
+                names: ['ttl'],
+                arg: '--ttl'
+        }, {
+                names: ['log'],
+                arg: '--log'
+        }, {
+                names: ['uidOwner'],
+                arg: '--uid-owner'
+        }, {
+                names: ['gidOwner'],
+                arg: '--gid-owner'
+        }, {
+                names: ['socketExists'],
+                arg: '--socket-exists'
+        }, {
+                names: ['physdevIn', 'pdevIn', 'pIn'],
+                arg: '--physdev-in'
+        }, {
+                names: ['physdevOut', 'pdevOut', 'pOut'],
+                arg: '--physdev-out'
+        }, {
+                names: ['physdevIsIn', 'pdevIsIn', 'pIsIn'],
+                arg: '--physdev-is-in'
+        }, {
+                names: ['physdevIsOut', 'pdevIsOut', 'pIsOut'],
+                arg: '--physdev-is-out'
+        }, {
+                names: ['physdevIsBridged', 'pdevIsBridged', 'pIsBridged'],
+                arg: '--physdev-is-bridged'
+        }, {
+                names: ['pktType', 'pType'],
+                arg: '--pkt-type'
+        }, {
+                names: ['dir'],
+                arg: '--dir'
+        }, {
+                names: ['policy', 'pol'],
+                arg: '--pol'
+        }, {
+                names: ['strict'],
+                arg: '--strict'
+        }, {
+                names: ['reqid'],
+                arg: '--reqid'
+        }, {
+                names: ['spi'],
+                arg: '--spi'
+        }, {
+                names: ['proto'],
+                arg: '--proto'
+        }, {
+                names: ['mode'],
+                arg: '--mode'
+        }, {
+                names: ['tunnelSrc', 'tunSrc', 'tSrc'],
+                arg: '--tunnel-src'
+        }, {
+                names: ['tunnelDst', 'tunDst', 'tDst'],
+                arg: '--tunnel-dst'
+        }, {
+                names: ['next'],
+                arg: '--next'
+        }, {
+                names: ['quota'],
+                arg: '--quota'
+        }, {
     names: ['rateestDelta'],
     arg: '--rateest-delta'
   }, {
@@ -734,7 +737,7 @@ let args = [
   }, {
     names: ['line-numbers', 'linenumbers', 'lines'],
     arg: '--line-numbers'
-  }	
+  }
 ];
 
 module.exports = args;
